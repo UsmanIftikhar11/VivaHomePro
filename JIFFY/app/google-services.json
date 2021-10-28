@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "67035447927",
+    "firebase_url": "https://jiffy-efc34.firebaseio.com",
+    "project_id": "jiffy-efc34",
+    "storage_bucket": "jiffy-efc34.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:67035447927:android:d83a4a8909e678fc9c7c72",
+        "android_client_info": {
+          "package_name": "com.viva.vivahomepro"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "67035447927-5cg60dnck1eaut9a23v2hjcnr0b8aa53.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.viva.vivahomepro",
+            "certificate_hash": "37e2bd42ae98d43cd6a8fab113f7168d55af3656"
+          }
+        },
+        {
+          "client_id": "67035447927-0qjkq3sp2bmkv6laa24tf9mgim3t3aeq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAkiHnaYiIonQ9A_eV7mKiHlAjQi0oiHfc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "67035447927-0qjkq3sp2bmkv6laa24tf9mgim3t3aeq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

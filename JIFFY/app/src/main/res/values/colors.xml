@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1C1A1A</color>
+    <color name="colorPrimaryDark">#1C1A1A</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="screenBackground">#1C1A1A</color>
+
+    <color name="purple">#722F8C</color>
+
+
+    <color name="colorPrimaryPro">#FDFEFE</color>
+    <color name="colorPrimaryDarkPro">#FDFEFE</color>
+    <color name="colorAccentPro">#1974BB</color>
+
+    <color name="screenBackgroundPro">#F7F9F9</color>
+
+</resources>
+
+

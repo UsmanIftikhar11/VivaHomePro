@@ -1,0 +1,136 @@
+<resources>
+    <string name="app_name">VIVA Home Pros</string>
+    <string name="agreed">By signing up I agree to </string>
+    <string name="terms"><u>Terms of use</u>.</string>
+    <string name="member">I\'m already a member!</string>
+
+    <string name="termofuse"><u>terms of user</u> and <u>privacy policy</u>.</string>
+
+    <string name="forgot">Forgot password?</string>
+
+    <string name="ques1">How <b>satisfied</b> are you with this company?</string>
+    <string name="ques2">Forgot password?</string>
+
+
+    <string name="stop">STOP CALLING AROUND</string>
+    <string name="jiffy">Jiffy is the easiest way to book quick, small jobs around the house.</string>
+    <string name="instant">Instant Booking</string>
+    <string name="instant_details">We\'re always available via our large network of professionals, simply specify an ideal time for you and we\'ll match you with a nearby pro. All rates are pre-set, so you know you\'re always paying an industry average rate, without having to research, price compare, and go back and forth haggling with each company.</string>
+    <string name="only">Only Amazing Pros</string>
+    <string name="only_details">Each company goes through a thorough vetting process, and are held to a high standard as rated by other users. After the job, you\'ll be billed via credit card and prompted to rate your pro. We\'re so confident we\'ll deliver an exceptional experience, that if anything didn\'t go perfectly, simply let us know and we\'ll do everything we can to make it right.</string>
+
+
+    <string-array name="authorize">
+        <item>Yes</item>
+        <item>No</item>
+    </string-array>
+
+    <string-array name="cities">
+        <item>Select City</item>
+        <item>Abbotsford</item>
+        <item>Barrie</item>
+        <item>Brampton</item>
+        <item>Brantford</item>
+        <item>Burlington</item>
+        <item>Calgary</item>
+        <item>Cambridge, Ontario</item>
+        <item>Charlottetown</item>
+        <item>Edmonton</item>
+        <item>Fredericton</item>
+        <item>Gatineau</item>
+        <item>Guelph</item>
+        <item>Hamilton</item>
+        <item>Halifax</item>
+        <item>kam Loops</item>
+        <item>Kelowna</item>
+        <item>Kingston</item>
+        <item>Kitchener</item>
+        <item>Lethbridge</item>
+        <item>London, Ontario</item>
+        <item>Markham</item>
+        <item>Mississauga</item>
+        <item>Moncton</item>
+        <item>Montreal</item>
+        <item>Niagara Falls, Ontario</item>
+        <item>North Bay</item>
+        <item>North York</item>
+        <item>Peterborough</item>
+        <item>Prince George</item>
+        <item>Oshawa</item>
+        <item>Ottawa</item>
+        <item>Quebec City</item>
+        <item>Red Deer</item>
+        <item>Regina</item>
+        <item>Regional Municipality of Niagara</item>
+        <item>Saint John</item>
+        <item>Sarnia</item>
+        <item>Saskatoon</item>
+        <item>Sherbrooke</item>
+        <item>St. Catharines</item>
+        <item>St. John\'s</item>
+        <item>Surrey</item>
+        <item>Thunder Bay</item>
+        <item>Toronto</item>
+        <item>Trois-Rivières</item>
+        <item>Vancouver</item>
+        <item>Vaughan</item>
+        <item>Victoria</item>
+        <item>Whitehorse</item>
+        <item>Windsor</item>
+        <item>Winnipeg</item>
+    </string-array>
+
+    <string-array name="category">
+        <item>Alarm system</item>
+        <item>Antique Retailers</item>
+        <item>Closet &amp; Store Solutions </item>
+        <item>Electrician</item>
+        <item>General Contractor</item>
+        <item>House Cleaning</item>
+        <item>Interior Design</item>
+        <item>Interlocking Stone</item>
+        <item>Junk Removal</item>
+        <item>Roofing</item>
+    </string-array>
+
+    <string-array name="category1">
+        <item>How can we help you today?</item>
+        <item>Alarm system</item>
+        <item>Antique Retailers</item>
+        <item>Closet &amp; Store Solutions </item>
+        <item>Electrician</item>
+        <item>General Contractor</item>
+        <item>House Cleaning</item>
+        <item>Interior Design</item>
+        <item>Interlocking Stone</item>
+        <item>Junk Removal</item>
+        <item>Roofing</item>
+    </string-array>
+
+    <string-array name="category2">
+        <item>Choose a category below</item>
+        <item>Alarm system</item>
+        <item>Antique Retailers</item>
+        <item>Closet &amp; Store Solutions </item>
+        <item>Electrician</item>
+        <item>General Contractor</item>
+        <item>House Cleaning</item>
+        <item>Interior Design</item>
+        <item>Interlocking Stone</item>
+        <item>Junk Removal</item>
+        <item>Roofing</item>
+    </string-array>
+
+    <string name="title_activity_customer_home">CustomerHome</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+</resources>

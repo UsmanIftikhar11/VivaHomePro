@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.viva.vivahomepro.ProFragementEmail"
+    android:background="@drawable/gradient">
+
+    <FrameLayout
+        android:id="@+id/passContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/toolbarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="56dp">
+
+        <ImageView
+            android:id="@+id/arrowBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/backarrowwhite"/>
+
+        <TextView
+            android:id="@+id/txt_toolbarLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/arrowBack"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:text="Login"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF"
+            android:fontFamily="sans-serif"
+            android:textStyle="bold"/>
+
+    </RelativeLayout>
+
+    <ImageButton
+        android:id="@+id/img_btnLogin"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/toolbarLayout"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/circle"
+        android:src="@drawable/forwardarrowblue"/>
+
+    <TextView
+        android:id="@+id/txt_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/img_btnLogin"
+        android:layout_centerHorizontal="true"
+        android:text="Your email address"
+        android:textColor="#FFFFFF"
+        android:textSize="22sp"
+        android:fontFamily="sans-serif-black"
+        android:textStyle="bold"
+        android:layout_marginTop="-15dp"/>
+
+    <EditText
+        android:id="@+id/et_proEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_below="@+id/txt_email"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:fontFamily="sans-serif"
+        android:textStyle="bold"
+        android:backgroundTint="#FFFFFF"
+        android:textColor="#FFFFFF"
+        android:inputType="textEmailAddress"/>
+
+    <TextView
+        android:id="@+id/txt_byUsing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_proEmail"
+        android:layout_centerHorizontal="true"
+        android:text="By using this app your agree to Viva Home Pro's"
+        android:textColor="#FFFFFF"
+        android:fontFamily="sans-serif"
+        android:layout_marginTop="20dp"
+        android:textSize="13sp"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:id="@+id/txt_term"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="terms of use"
+        android:textColor="#FFFFFF"
+        android:fontFamily="sans-serif"
+        android:textSize="13sp"
+        android:layout_below="@+id/txt_byUsing"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:id="@+id/txt_version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="v1.0.0"
+        android:textColor="#FFFFFF"
+        android:fontFamily="sans-serif"
+        android:textSize="11sp"
+        android:layout_below="@+id/txt_term"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:layout_marginTop="10dp"/>
+
+</RelativeLayout>

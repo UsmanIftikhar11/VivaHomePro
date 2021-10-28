@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/rlLeads"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imgUser"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/profilemip"
+            android:background="#00FFFFFF"/>
+
+        <TextView
+            android:id="@+id/txtUserName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/imgUser"
+            android:layout_marginLeft="20dp"
+            tools:text="John"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#181616"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/txtTaskName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/imgUser"
+            android:layout_below="@+id/txtUserName"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            tools:text="Alarms System"/>
+
+        <TextView
+            android:id="@+id/txtDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            tools:text="2020-09-22"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

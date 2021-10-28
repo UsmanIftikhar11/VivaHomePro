@@ -1,0 +1,518 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.viva.vivahomepro.ProSuccessTracker">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        fontPath="fonts/roboto.ttf"
+        tools:ignore="MissingPrefix">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:titleTextColor="#141313">
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/appbar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <RelativeLayout
+                android:id="@+id/layoutMonth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/imgLine1"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_toLeftOf="@+id/txt_month"
+                    android:layout_below="@+id/txt_month"
+                    android:background="#807E7E"
+                    android:layout_marginTop="-10dp"
+                    android:layout_marginRight="15dp"/>
+
+                <TextView
+                    android:id="@+id/txt_month"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_centerHorizontal="true"
+                    android:text="MONTH-TO-DATE, September"
+                    android:textColor="#807E7E"
+                    android:fontFamily="sans-serif"
+                    android:textStyle="bold"/>
+
+                <ImageView
+                    android:id="@+id/imgLine"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_toRightOf="@+id/txt_month"
+                    android:layout_below="@+id/txt_month"
+                    android:background="#807E7E"
+                    android:layout_marginTop="-10dp"
+                    android:layout_marginLeft="15dp"/>
+
+                <TextView
+                    android:id="@+id/txtPercent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txt_month"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:text="100%"
+                    android:textSize="70sp"
+                    android:textColor="#11C014"/>
+
+                <TextView
+                    android:id="@+id/txt_ofVisitor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_centerHorizontal="true"
+                    android:text="of your visitors tried to connect with you"
+                    android:textColor="#807E7E"
+                    android:fontFamily="sans-serif"
+                    android:layout_below="@+id/txtPercent"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:id="@+id/txtListing"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="90dp"
+                    android:text="Listing Visits"
+                    android:textColor="#000000"
+                    android:fontFamily="sans-serif"
+                    android:layout_below="@+id/txt_ofVisitor"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:id="@+id/txtListingNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="90dp"
+                    android:text="1"
+                    android:textColor="#000000"
+                    android:fontFamily="sans-serif"
+                    android:layout_below="@+id/txt_ofVisitor"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:id="@+id/txtConnection"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="90dp"
+                    android:text="Connections"
+                    android:textColor="#000000"
+                    android:fontFamily="sans-serif"
+                    android:layout_below="@+id/txtListing"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:id="@+id/txtConnectionNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="90dp"
+                    android:textSize="16sp"
+                    android:text="0"
+                    android:textColor="#000000"
+                    android:fontFamily="sans-serif"
+                    android:layout_below="@+id/txtListingNo"/>
+
+                <TextView
+                    android:id="@+id/txtWebsite"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="90dp"
+                    android:textSize="16sp"
+                    android:text="Website"
+                    android:textColor="#807E7E"
+                    android:fontFamily="sans-serif"
+                    android:layout_below="@+id/txtConnection"/>
+
+                <TextView
+                    android:id="@+id/txtWebsiteNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="90dp"
+                    android:textSize="16sp"
+                    android:text="0"
+                    android:textColor="#807E7E"
+                    android:fontFamily="sans-serif"
+                    android:layout_below="@+id/txtConnectionNo"/>
+
+                <TextView
+                    android:id="@+id/txtPhone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="90dp"
+                    android:textSize="16sp"
+                    android:text="Phone"
+                    android:textColor="#807E7E"
+                    android:fontFamily="sans-serif"
+                    android:layout_below="@+id/txtWebsite"/>
+
+                <TextView
+                    android:id="@+id/txtPhoneNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="90dp"
+                    android:textSize="16sp"
+                    android:text="0"
+                    android:textColor="#807E7E"
+                    android:fontFamily="sans-serif"
+                    android:layout_below="@+id/txtWebsiteNo"/>
+
+                <TextView
+                    android:id="@+id/txtLeads"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="90dp"
+                    android:textSize="16sp"
+                    android:text="Total Leads"
+                    android:textColor="#000000"
+                    android:fontFamily="sans-serif"
+                    android:layout_below="@+id/txtPhone"/>
+
+                <TextView
+                    android:id="@+id/txtLeadsNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="90dp"
+                    android:textSize="16sp"
+                    android:text="1"
+                    android:textColor="#000000"
+                    android:fontFamily="sans-serif"
+                    android:layout_below="@+id/txtPhoneNo"/>
+
+                <TextView
+                    android:id="@+id/txtProfile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="90dp"
+                    android:textSize="16sp"
+                    android:text="Profile Leads"
+                    android:textColor="#807E7E"
+                    android:fontFamily="sans-serif"
+                    android:layout_below="@+id/txtLeads"/>
+
+                <TextView
+                    android:id="@+id/txtProfileNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="90dp"
+                    android:textSize="16sp"
+                    android:text="1"
+                    android:textColor="#807E7E"
+                    android:fontFamily="sans-serif"
+                    android:layout_below="@+id/txtLeadsNo"/>
+
+                <TextView
+                    android:id="@+id/txtHomestars"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="90dp"
+                    android:textSize="16sp"
+                    android:text="Homestars Leads"
+                    android:textColor="#807E7E"
+                    android:fontFamily="sans-serif"
+                    android:layout_below="@+id/txtProfile"/>
+
+                <TextView
+                    android:id="@+id/txtHomestarNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="90dp"
+                    android:textSize="16sp"
+                    android:text="0"
+                    android:textColor="#807E7E"
+                    android:fontFamily="sans-serif"
+                    android:layout_below="@+id/txtProfileNo"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layoutYear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layoutMonth"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="30dp">
+
+                <ImageView
+                    android:id="@+id/imgLine111"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_toLeftOf="@+id/txt_month1"
+                    android:layout_below="@+id/txt_month1"
+                    android:background="#807E7E"
+                    android:layout_marginTop="-10dp"
+                    android:layout_marginRight="15dp"/>
+
+                <TextView
+                    android:id="@+id/txt_month1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_centerHorizontal="true"
+                    android:text="PAST 12 MONTHS"
+                    android:textColor="#807E7E"
+                    android:fontFamily="sans-serif"
+                    android:textStyle="bold"/>
+
+                <ImageView
+                    android:id="@+id/imgLine11"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_toRightOf="@+id/txt_month1"
+                    android:layout_below="@+id/txt_month1"
+                    android:background="#807E7E"
+                    android:layout_marginTop="-10dp"
+                    android:layout_marginLeft="15dp"/>
+
+                <TextView
+                    android:id="@+id/txtPercent1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txt_month1"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:text="100%"
+                    android:textSize="70sp"
+                    android:textColor="#11C014"/>
+
+                <TextView
+                    android:id="@+id/txt_ofVisitor1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_centerHorizontal="true"
+                    android:text="of your visitors tried to connect with you"
+                    android:textColor="#807E7E"
+                    android:fontFamily="sans-serif"
+                    android:layout_below="@+id/txtPercent1"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:id="@+id/txtListing1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="90dp"
+                    android:textSize="16sp"
+                    android:text="Listing Visits"
+                    android:textColor="#000000"
+                    android:fontFamily="sans-serif"
+                    android:layout_below="@+id/txt_ofVisitor1"/>
+
+                <TextView
+                    android:id="@+id/txtListingNo1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="90dp"
+                    android:textSize="16sp"
+                    android:text="1"
+                    android:textColor="#000000"
+                    android:fontFamily="sans-serif"
+                    android:layout_below="@+id/txt_ofVisitor1"/>
+
+                <TextView
+                    android:id="@+id/txtConnection1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="90dp"
+                    android:textSize="16sp"
+                    android:text="Connections"
+                    android:textColor="#000000"
+                    android:fontFamily="sans-serif"
+                    android:layout_below="@+id/txtListing1"/>
+
+                <TextView
+                    android:id="@+id/txtConnectionNo1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="90dp"
+                    android:textSize="16sp"
+                    android:text="0"
+                    android:textColor="#000000"
+                    android:fontFamily="sans-serif"
+                    android:layout_below="@+id/txtListingNo1"/>
+
+                <TextView
+                    android:id="@+id/txtWebsite1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="90dp"
+                    android:textSize="16sp"
+                    android:text="Website"
+                    android:textColor="#807E7E"
+                    android:fontFamily="sans-serif"
+                    android:layout_below="@+id/txtConnection1"/>
+
+                <TextView
+                    android:id="@+id/txtWebsiteNo1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="20dp"
+                    android:textSize="16sp"
+                    android:layout_marginRight="90dp"
+                    android:text="0"
+                    android:textColor="#807E7E"
+                    android:fontFamily="sans-serif"
+                    android:layout_below="@+id/txtConnectionNo1"/>
+
+                <TextView
+                    android:id="@+id/txtPhone1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="90dp"
+                    android:textSize="16sp"
+                    android:text="Phone"
+                    android:textColor="#807E7E"
+                    android:fontFamily="sans-serif"
+                    android:layout_below="@+id/txtWebsite1"/>
+
+                <TextView
+                    android:id="@+id/txtPhoneNo1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="90dp"
+                    android:textSize="16sp"
+                    android:text="0"
+                    android:textColor="#807E7E"
+                    android:fontFamily="sans-serif"
+                    android:layout_below="@+id/txtWebsiteNo1"/>
+
+                <TextView
+                    android:id="@+id/txtLeads1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="90dp"
+                    android:textSize="16sp"
+                    android:text="Total Leads"
+                    android:textColor="#000000"
+                    android:fontFamily="sans-serif"
+                    android:layout_below="@+id/txtPhone1"/>
+
+                <TextView
+                    android:id="@+id/txtLeadsNo1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="90dp"
+                    android:textSize="16sp"
+                    android:text="1"
+                    android:textColor="#000000"
+                    android:fontFamily="sans-serif"
+                    android:layout_below="@+id/txtPhoneNo1"/>
+
+                <TextView
+                    android:id="@+id/txtProfile1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="90dp"
+                    android:textSize="16sp"
+                    android:text="Profile Leads"
+                    android:textColor="#807E7E"
+                    android:fontFamily="sans-serif"
+                    android:layout_below="@+id/txtLeads1"/>
+
+                <TextView
+                    android:id="@+id/txtProfileNo1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="90dp"
+                    android:textSize="16sp"
+                    android:text="1"
+                    android:textColor="#807E7E"
+                    android:fontFamily="sans-serif"
+                    android:layout_below="@+id/txtLeadsNo1"/>
+
+                <TextView
+                    android:id="@+id/txtHomestars1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="90dp"
+                    android:textSize="16sp"
+                    android:text="Homestars Leads"
+                    android:textColor="#807E7E"
+                    android:fontFamily="sans-serif"
+                    android:layout_below="@+id/txtProfile1"/>
+
+                <TextView
+                    android:id="@+id/txtHomestarNo1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="90dp"
+                    android:textSize="16sp"
+                    android:text="0"
+                    android:textColor="#807E7E"
+                    android:fontFamily="sans-serif"
+                    android:layout_below="@+id/txtProfileNo1"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+</RelativeLayout>

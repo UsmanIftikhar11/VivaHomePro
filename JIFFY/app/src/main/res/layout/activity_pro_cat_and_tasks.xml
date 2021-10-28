@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.viva.vivahomepro.ProCatAndTasks"
+    android:background="@color/screenBackgroundPro">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <RelativeLayout
+                android:id="@+id/layoutToolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/purple">
+
+                <ImageView
+                    android:id="@+id/imgClose"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:src="@drawable/ic_close_black_24dp"/>
+
+                <TextView
+                    android:id="@+id/txtToolbarTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="Categories &amp; Tasks"
+                    android:textSize="16sp"
+                    android:textColor="#FFFFFF"
+                    android:fontFamily="sans-serif-black"
+                    android:textStyle="bold"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/expandToolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layoutToolbar"
+                android:background="@drawable/gradient">
+
+                <ImageView
+                    android:id="@+id/imgToolbar"
+                    android:layout_width="55dp"
+                    android:layout_height="65dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/ct"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imgToolbar"
+                    android:layout_centerHorizontal="true"
+                    android:text="Select the tasks you are able to perform for each category. You will only receive leads for these tasks."
+                    android:textAlignment="center"
+                    android:padding="25dp"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layoutContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/expandToolbar"
+                android:background="#FFFFFF"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:id="@+id/txtCat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="Appliance Repair"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:fontFamily="sans-serif"
+                    android:textStyle="bold"/>
+
+                <Button
+                    android:id="@+id/btn_remove"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="remove"
+                    android:background="@drawable/round_transparent"
+                    android:textColor="#363333"/>
+
+                <CheckBox
+                    android:id="@+id/imgCheck"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_below="@+id/txtCat"
+                    android:layout_marginTop="20dp"
+                    android:checked="true"/>
+
+                <TextView
+                    android:id="@+id/txtCheckBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/imgCheck"
+                    android:layout_below="@+id/txtCat"
+                    android:text="Appliance (Major Electric Appliance) - Install or Repair"
+                    android:textAlignment="center"
+                    android:textColor="#5C5B5B"
+                    android:textSize="14sp"
+                    android:fontFamily="sans-serif"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="20dp"/>
+
+                <CheckBox
+                    android:id="@+id/imgCheck1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_below="@+id/imgCheck"
+                    android:layout_marginTop="20dp"
+                    android:checked="true"/>
+
+                <TextView
+                    android:id="@+id/txtCheckBox1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/imgCheck"
+                    android:layout_below="@+id/txtCheckBox"
+                    android:text="Appliance (All Types) - Repair or service"
+                    android:textAlignment="center"
+                    android:textColor="#5C5B5B"
+                    android:textSize="14sp"
+                    android:fontFamily="sans-serif"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="20dp"/>
+
+
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/btn_addCategory"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_below="@+id/layoutContent"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/cardview_round3"
+                android:text="add category"
+                android:textColor="#FFFFFF"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"/>
+
+            <TextView
+                android:id="@+id/txtYouCannot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="You cannot add any more categories."
+                android:textAlignment="center"
+                android:textColor="#8B8989"
+                android:textSize="12sp"
+                android:fontFamily="sans-serif"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/btn_addCategory"/>
+
+            <TextView
+                android:id="@+id/txtIsThere"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Is there something your company does that you dont see a task for?"
+                android:textAlignment="center"
+                android:textColor="#8B8989"
+                android:textSize="14sp"
+                android:fontFamily="sans-serif"
+                android:layout_centerHorizontal="true"
+                android:paddingLeft="50dp"
+                android:paddingRight="50dp"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:layout_marginTop="25dp"
+                android:layout_below="@+id/txtYouCannot"/>
+
+            <TextView
+                android:id="@+id/txtRequest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Request task to be added"
+                android:textAlignment="center"
+                android:textColor="@color/purple"
+                android:textSize="14sp"
+                android:fontFamily="sans-serif"
+                android:layout_centerHorizontal="true"
+                android:paddingLeft="50dp"
+                android:paddingRight="50dp"
+                android:layout_below="@+id/txtIsThere"
+                android:layout_marginBottom="25dp"/>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

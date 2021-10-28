@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.viva.vivahomepro.ProFragmentPass"
+    android:background="@drawable/gradient">
+
+    <RelativeLayout
+        android:id="@+id/toolbarLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="56dp">
+
+        <ImageView
+            android:id="@+id/arrowBack1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/backarrowwhite"/>
+
+        <TextView
+            android:id="@+id/txt_toolbarLogin1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/arrowBack1"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:text="Login"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF"
+            android:fontFamily="sans-serif"
+            android:textStyle="bold"/>
+
+    </RelativeLayout>
+
+    <ImageButton
+        android:id="@+id/img_btnLogin1"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/toolbarLayout1"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/circle"
+        android:src="@drawable/forwardarrowblue"/>
+
+    <TextView
+        android:id="@+id/txt_email1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/img_btnLogin1"
+        android:layout_centerHorizontal="true"
+        android:text="Your password"
+        android:textColor="#FFFFFF"
+        android:textSize="22sp"
+        android:fontFamily="sans-serif-black"
+        android:textStyle="bold"
+        android:layout_marginTop="-15dp"/>
+
+    <EditText
+        android:id="@+id/et_proPass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_below="@+id/txt_email1"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:fontFamily="sans-serif"
+        android:textStyle="bold"
+        android:backgroundTint="#FFFFFF"
+        android:textColor="#FFFFFF"
+        android:inputType="textPassword"/>
+
+    <CheckBox
+        android:id="@+id/showPass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/et_proPass"
+        android:layout_marginTop="10dp"
+        android:textColor="#FFFFFF"
+        android:text="Show paswword"
+        android:textSize="16sp"
+        android:fontFamily="sans-serif"
+        android:buttonTint="#FFFFFF"/>
+
+    <TextView
+        android:id="@+id/txt_forgotPass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/showPass"
+        android:layout_centerHorizontal="true"
+        android:text="Forgot password?"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:fontFamily="sans-serif-black"
+        android:layout_marginTop="20dp"/>
+
+</RelativeLayout>

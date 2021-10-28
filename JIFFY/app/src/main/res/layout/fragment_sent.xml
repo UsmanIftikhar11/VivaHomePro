@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.viva.vivahomepro.FragmentSent"
+    android:background="#FAFAFA">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/allReqList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/img_fragmentAll"
+            android:layout_width="270dp"
+            android:layout_height="270dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/r1"/>
+
+        <TextView
+            android:id="@+id/allSent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="Review request awaiting a review will show up here."
+            android:textStyle="bold"
+            android:textColor="#BDC3C7"
+            android:fontFamily="sans-serif"
+            android:layout_below="@+id/img_fragmentAll"
+            android:layout_marginTop="10dp"
+            android:textAlignment="center"/>
+
+    </RelativeLayout>
+
+</FrameLayout>

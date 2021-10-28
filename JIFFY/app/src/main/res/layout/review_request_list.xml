@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txtReplyTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="15dp"
+            android:text="REVIEW REQUEST"
+            android:fontFamily="sans-serif"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/txtReqDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="15dp"
+            android:layout_alignParentRight="true"
+            android:text="Date"
+            android:fontFamily="sans-serif"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/txtReqTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:text="Title"
+            android:fontFamily="sans-serif"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:layout_below="@+id/txtReplyTitle"
+            android:textColor="#000000"/>
+
+        <TextView
+            android:id="@+id/txtReqStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:text="Sent"
+            android:fontFamily="sans-serif"
+            android:textSize="12sp"
+            android:layout_below="@+id/txtReqTitle"/>
+
+        <TextView
+            android:id="@+id/txtDot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="-10dp"
+            android:text="."
+            android:fontFamily="sans-serif"
+            android:textSize="22sp"
+            android:layout_below="@+id/txtReqTitle"
+            android:layout_toRightOf="@+id/txtReqStatus"/>
+
+        <TextView
+            android:id="@+id/txtReqEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:text="username@abc.com"
+            android:fontFamily="sans-serif"
+            android:textSize="12sp"
+            android:layout_alignBaseline="@+id/txtReqStatus"
+            android:layout_toRightOf="@+id/txtDot"
+            android:layout_marginBottom="10dp"/>
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.viva.vivahomepro.ProReplyTemplateDelete">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        fontPath="fonts/roboto.ttf"
+        tools:ignore="MissingPrefix">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar1"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:titleTextColor="#141313"
+            app:titleTextAppearance="@style/toolbarTheme">
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_Title"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#00FFFFFF"
+        android:layout_below="@+id/appbar1">
+
+        <TextView
+            android:id="@+id/txt_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Title  "
+            android:textColor="#C9272727"
+            android:fontFamily="sans-serif"
+            android:textSize="13sp"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"/>
+
+        <EditText
+            android:id="@+id/et_templateTitle"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_toRightOf="@+id/txt_email"
+            android:layout_marginLeft="20dp"
+            android:background="#00FFFFFF"
+            android:hint="Type here"
+            android:fontFamily="sans-serif"
+            android:textSize="13sp"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#BDC3C7"
+            android:layout_alignParentBottom="true"/>
+
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/et_templateBody"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@+id/layout_Title"
+        android:layout_marginLeft="10dp"
+        android:background="#00FFFFFF"
+        android:hint="Enter template body here..."
+        android:fontFamily="sans-serif"
+        android:textSize="13sp"
+        android:inputType="textMultiLine"/>
+
+    <Button
+        android:id="@+id/btn_saveReply"
+        android:layout_width="70dp"
+        android:layout_height="35dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="save"
+        android:background="@drawable/cardview_round3"
+        android:textColor="#FFFFFF"/>
+
+</RelativeLayout>

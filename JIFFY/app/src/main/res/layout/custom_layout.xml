@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/imgCloseDialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_close_black_24dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"/>
+
+    <ImageView
+        android:id="@+id/imgInfo"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/ic_info_outline_black_24dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/imgCloseDialog"/>
+
+    <TextView
+        android:id="@+id/txtSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SAVE DRAFT"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/imgInfo"
+        android:layout_marginTop="20dp"
+        android:textSize="18sp"
+        android:fontFamily="sans-serif"
+        android:textStyle="bold"
+        android:textColor="#000000"/>
+
+    <TextView
+        android:id="@+id/txtWould"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Would you like to save or delete this draft?"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/txtSave"
+        android:layout_marginTop="10dp"
+        android:textSize="14sp"
+        android:fontFamily="sans-serif"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtWould"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp">
+
+        <Button
+            android:id="@+id/btnSaveDraft"
+            android:layout_width="110dp"
+            android:layout_height="50dp"
+            android:text="delete"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/cardview_round4"
+            android:textColor="#FFFFFF"/>
+
+        <Button
+            android:id="@+id/btnDeleteDraft"
+            android:layout_width="110dp"
+            android:layout_height="50dp"
+            android:text="save"
+            android:layout_toRightOf="@+id/btnSaveDraft"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/cardview_round3"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="10dp"/>
+
+
+    </RelativeLayout>
+</RelativeLayout>

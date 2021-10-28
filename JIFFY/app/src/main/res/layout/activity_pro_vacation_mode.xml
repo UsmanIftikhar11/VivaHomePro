@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.viva.vivahomepro.ProVacationMode"
+    android:background="#FFFFFF">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        fontPath="fonts/roboto.ttf"
+        tools:ignore="MissingPrefix">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:titleTextColor="#141313">
+
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/appbar"
+        android:background="#FFFFFF">
+
+        <ImageView
+            android:id="@+id/imgVacation"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/v1"/>
+
+        <TextView
+            android:id="@+id/txtTurnOn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imgVacation"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:text="Turn on Vacation Mode"
+            android:textColor="#1A1919"
+            android:fontFamily="sans-serif"/>
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/switchVacation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/txtTurnOn"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"/>
+
+        <TextView
+            android:id="@+id/txtStopLeads"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtTurnOn"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="20dp"
+            android:text="Stop receiving new leads for a brief period of time. While away, we'll let potential clients know you're unavailable. You can turn this on for 30 days at a time"
+            android:fontFamily="sans-serif"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/txtNull"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/txtStopLeads"/>
+
+        <TextView
+            android:id="@+id/txtFirst"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtStopLeads"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="20dp"
+            android:text="First Day"
+            android:fontFamily="sans-serif"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/etFirst"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtFirst"
+            android:layout_toLeftOf="@+id/txtNull"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="15dp"
+            android:hint="Not Set"
+            android:textSize="12sp"
+            android:backgroundTint="#969292"
+            android:drawableRight="@drawable/downarrowsmall"
+            android:inputType="date"/>
+
+        <TextView
+            android:id="@+id/txtSecond"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtStopLeads"
+            android:layout_toRightOf="@+id/txtNull"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="20dp"
+            android:text="Last Day"
+            android:fontFamily="sans-serif"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/etSecond"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtFirst"
+            android:layout_toRightOf="@+id/txtNull"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="15dp"
+            android:hint="Not Set"
+            android:textSize="12sp"
+            android:backgroundTint="#969292"
+            android:drawableRight="@drawable/downarrowsmall"
+            android:focusable="false"
+            android:inputType=""/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

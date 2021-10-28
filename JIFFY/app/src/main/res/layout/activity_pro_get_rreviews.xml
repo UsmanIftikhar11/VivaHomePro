@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.viva.vivahomepro.ProGetRreviews"
+    android:background="@color/screenBackgroundPro">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        fontPath="fonts/roboto.ttf"
+        tools:ignore="MissingPrefix">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar1"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:titleTextColor="#141313"
+            app:titleTextAppearance="@style/toolbarTheme">
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_proGetReviews"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/appbar1"
+        android:layout_marginBottom="10dp">
+
+        <TextView
+            android:id="@+id/txt_clientInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CLIENT CONTACT INFORMATION"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="#8F8B8B"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif"
+            android:textSize="12sp"/>
+
+        <RelativeLayout
+            android:id="@+id/layout_phone"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@color/colorPrimaryDarkPro"
+            android:layout_below="@+id/txt_clientInfo"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:id="@+id/txt_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Phone"
+                android:textColor="#C9000000"
+                android:textStyle="bold"
+                android:textSize="13sp"
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true"
+                android:fontFamily="sans-serif-black"/>
+
+            <com.santalu.maskedittext.MaskEditText
+                android:id="@+id/et_clientPhone"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@color/colorPrimaryDarkPro"
+                android:layout_toRightOf="@+id/txt_phone"
+                android:layout_marginLeft="20dp"
+                android:hint="(123) 456-7890"
+                android:textSize="13sp"
+                android:fontFamily="sans-serif"
+                android:inputType="number"
+                android:maxLength="14"
+                app:met_mask="(###) ###-####"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#BDC3C7"
+                android:layout_alignParentBottom="true"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_email"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@color/colorPrimaryDarkPro"
+            android:layout_below="@+id/layout_phone">
+
+            <TextView
+                android:id="@+id/txt_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email  "
+                android:textColor="#C9000000"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-black"
+                android:textSize="13sp"
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true"/>
+
+            <EditText
+                android:id="@+id/et_clientEmail"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_toRightOf="@+id/txt_email"
+                android:layout_marginLeft="20dp"
+                android:background="@color/colorPrimaryDarkPro"
+                android:hint="homeowner@email.com"
+                android:fontFamily="sans-serif"
+                android:textSize="13sp"
+                android:inputType="textEmailAddress"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#BDC3C7"
+                android:layout_alignParentBottom="true"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/txt_importContact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CONTACT INFO"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/colorAccentPro"
+            android:layout_below="@+id/layout_email"
+            android:textStyle="bold"
+            android:textSize="11sp"
+            android:fontFamily="sans-serif"/>
+
+        <TextView
+            android:id="@+id/txt_jobDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="JOB DETAILS"
+            android:layout_below="@+id/txt_importContact"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="#8F8B8B"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif"
+            android:textSize="12sp"/>
+
+        <RelativeLayout
+            android:id="@+id/layout_jobDetails"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@color/colorPrimaryDarkPro"
+            android:layout_below="@+id/txt_jobDetail"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/txt_jobTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Title  "
+                android:textColor="#C9000000"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-black"
+                android:textSize="13sp"
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true"/>
+
+            <EditText
+                android:id="@+id/et_jobDetails"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_toRightOf="@+id/txt_jobTitle"
+                android:layout_marginLeft="20dp"
+                android:background="@color/colorPrimaryDarkPro"
+                android:hint="e.g. New Kitchen Backsplash"
+                android:fontFamily="sans-serif"
+                android:textSize="13sp"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#BDC3C7"
+                android:layout_alignParentBottom="true"/>
+
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/layout_send"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/colorPrimaryDarkPro"
+        android:layout_alignParentBottom="true">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#BDC3C7"/>
+
+<!--        <ImageView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_centerVertical="true"-->
+<!--            android:layout_marginLeft="20dp"-->
+<!--            android:src="@drawable/photoreviewmip"/>-->
+
+        <Button
+            android:id="@+id/btn_send"
+            android:layout_width="70dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:text="Send"
+            android:background="@drawable/round_transparent"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

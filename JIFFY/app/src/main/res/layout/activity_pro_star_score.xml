@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.viva.vivahomepro.ProStarScore">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        fontPath="fonts/roboto.ttf"
+        tools:ignore="MissingPrefix">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar3"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:titleTextColor="#FFFFFF"
+            app:titleTextAppearance="@style/toolbarTheme">
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/appbar3"
+        android:background="#24303C">
+
+        <ImageView
+            android:id="@+id/imgHeader"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/starscoreheader"
+            android:scaleType="fitXY" />
+
+        <RelativeLayout
+            android:id="@+id/layoutHeader1"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_below="@+id/imgHeader"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp">
+
+            <ImageView
+                android:id="@+id/imgstarWrite"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/starscorewrite"/>
+
+            <TextView
+                android:id="@+id/txtReviews"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/imgstarWrite"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:text="Get more positive reviews"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:fontFamily="sans-serif"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/txtReviews1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/imgstarWrite"
+                android:layout_below="@+id/txtReviews"
+                android:layout_marginLeft="10dp"
+                android:text="Request a review from a happy client."
+                android:textColor="#FFFFFF"
+                android:textSize="12sp"
+                android:fontFamily="sans-serif"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layoutHeader2"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_below="@+id/layoutHeader1"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp">
+
+            <ImageView
+                android:id="@+id/imgstarWrite2"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/starscoreclose"/>
+
+            <TextView
+                android:id="@+id/txtReviews2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/imgstarWrite2"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:text="Avoid Damaging Activities"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:fontFamily="sans-serif"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/txtReviews22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/imgstarWrite2"
+                android:layout_below="@+id/txtReviews2"
+                android:layout_marginLeft="10dp"
+                android:text="Don't submit fake reviews or try to force users to remove negative ones."
+                android:textColor="#FFFFFF"
+                android:textSize="12sp"
+                android:fontFamily="sans-serif"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

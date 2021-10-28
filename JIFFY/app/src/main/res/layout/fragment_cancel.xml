@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.viva.vivahomepro.FragmentCancel">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvServiceRequest1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+<!--
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv1"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imgUser"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/profilemip"
+                android:background="#00FFFFFF"/>
+
+            <TextView
+                android:id="@+id/txtUserName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/imgUser"
+                android:layout_marginLeft="20dp"
+                android:text="John"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#181616"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:id="@+id/txtTaskName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/imgUser"
+                android:layout_below="@+id/txtUserName"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:text="Alarms System"/>
+
+            <TextView
+                android:id="@+id/txtDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:text="2020-09-22"/>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cv1"
+        android:layout_marginTop="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imgUser1"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/profilemip"
+                android:background="#00FFFFFF"/>
+
+            <TextView
+                android:id="@+id/txtUserName1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/imgUser1"
+                android:layout_marginLeft="20dp"
+                android:text="John"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#181616"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:id="@+id/txtTaskName1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/imgUser1"
+                android:layout_below="@+id/txtUserName1"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:text="Alarms System"/>
+
+            <TextView
+                android:id="@+id/txtDate1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:text="2020-09-22"/>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>-->
+
+</RelativeLayout>
